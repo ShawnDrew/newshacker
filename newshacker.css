@@ -1,0 +1,18 @@
+/* general improvements */
+body {background-color:#f6f6ef;}
+body > center > table {width: 760px;}
+body > center > table > tbody > tr:first-child > td > table {background: #f6f6ef}
+
+body .title {font-size:16px;}
+body .subtext {padding:5px 5px 15px 5px;}
+
+body .comment {display:block; max-width:500px; line-height:1.4em; font-size:10pt;}
+
+td[align="right"][class="title"] {text-align:left; font-size:10pt; vertical-align:middle; opacity:.5;}
+
+/* lurker mode */
+form[action="/r"] {display:none;} /* reply form */
+p > font[size="1"] > u > a {display:none;} /* reply links */
+td[style="text-align:right;padding-right:4px;"] > span {display:none;} /* login link */
+.pagetop a[href="submit"] {display:none;} /* submit link */
+a[id^="up_"] {display:none;} /* up vote links */
