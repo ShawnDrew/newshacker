@@ -2,6 +2,7 @@
 body {background-color:#f6f6ef;}
 body > center > table {width: 760px;}
 body > center > table > tbody > tr:first-child > td > table {background: #f6f6ef}
+body > center > table > tbody > tr:nth-child(3) > td {border-left:2px solid rgba(204, 204, 204, 0.2);} /* so we can tell if we are on a root thread */
 
 body .title {font-size:16px;}
 body .subtext {padding:5px 5px 15px 5px;}
@@ -16,3 +17,8 @@ p > font[size="1"] > u > a {display:none;} /* reply links */
 td[style="text-align:right;padding-right:4px;"] > span {display:none;} /* login link */
 .pagetop a[href="submit"] {display:none;} /* submit link */
 a[id^="up_"] {display:none;} /* up vote links */
+
+/* highlight hn good guys */
+a[href="user?id=patio11"], a[href="user?id=pg"], a[href="user?id=edw519"], a[href="user?id=tptacek"] {background-color:lightsalmon; border-radius:2px; padding:0 2px; color:#FFF !important;}
+
+.nh-op {background-color:lightblue; border-radius:2px; padding:0 2px; color:#000 !important;}

@@ -1,12 +1,13 @@
 {
 	"name": "newshacker",
-	"version": "0.1",
+	"version": "0.2",
 	"description": "Fixes fluid width on hacker news.",
 	"content_scripts": [{
-		"matches": ["http://news.ycombinator.com/*"],
+		"matches": ["https://news.ycombinator.com/*"],
 		"js": ["jquery.min.js", "newshacker.js"],
-		"css": ["newshacker.css"]
+		"css": ["newshacker.css"],
+		"run_at": "document_end"
 	}],
-	"run_at": "document_end",
-	"permissions": ["<all_urls>"]
+	"permissions": ["<all_urls>"],
+	"manifest_version": 2
 }
